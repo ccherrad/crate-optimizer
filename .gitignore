@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+
+# Logs
+*.log
+
+# Local development settings
+*.env
+
+# IDE-specific files and directories
+.vscode/
+.idea/
+*.swp
+
+# Dependency management files
+pip-log.txt
+requirements.txt
+*.egg-info/
+htmlcov/
+dist/
+build/
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Editor-specific directories and files
+.vscode/
+.idea/
+# .vscode/  # Uncomment this line if you use Visual Studio Code
+# .idea/  # Uncomment this line if you use PyCharm
+
+# Compiled source
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Static files
+static/
+
