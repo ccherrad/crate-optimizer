@@ -2,6 +2,7 @@ fastapi
 uvicorn
 structlog
 pytest
+httpx
 black
 pylint
 isort
