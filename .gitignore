@@ -19,7 +19,6 @@ env/
 
 # Dependency management files
 pip-log.txt
-requirements.txt
 *.egg-info/
 htmlcov/
 dist/
