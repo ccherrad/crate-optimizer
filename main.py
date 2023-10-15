@@ -1,6 +1,13 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+from api import router as api_router
+
+app = FastAPI(
+    title="crate optimizer",
+)
+
+app.include_router(api_router)
+
 
 @app.get("/health")
 def health_check():
