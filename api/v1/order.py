@@ -11,13 +11,10 @@ from exceptions.persistance import ProductNotFound
 router = APIRouter(tags=["Orders"], prefix="/orders")
 
 
-@router.post(
-    "/dispatch",
-    response_model=CrateCounts
-)
+@router.post("/dispatch", response_model=CrateCounts)
 def dispatch_order(
     order_products: List[ProductOrder],
-    data_provider: DataProvider = Depends(get_data_provider)
+    data_provider: DataProvider = Depends(get_data_provider),
 ):
     try:
         crate_optimzer = CrateOptimizer(order_products, data_provider)
@@ -28,4 +25,3 @@ def dispatch_order(
         raise HTTPException(status_code=404, detail=e.message)
     except Exception:
         raise HTTPException(status_code=500, detail="Unknown error.")
-

@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class ProductOrder(BaseModel):
     id: str
     orderId: str
