@@ -1,8 +1,8 @@
 import math
 from typing import List
 
-from schemas.order import ProductOrder
 from persistance.load_data import DataProvider
+from schemas.order import ProductOrder
 
 
 class CrateOptimizer:

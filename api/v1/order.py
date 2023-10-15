@@ -1,12 +1,11 @@
 from typing import List
+
 from fastapi import APIRouter, Depends, HTTPException
 
-
-from schemas.order import ProductOrder, CrateCounts
-from persistance.load_data import get_data_provider, DataProvider
 from core.crate_optimizer import CrateOptimizer
 from exceptions.persistance import ProductNotFound
-
+from persistance.load_data import DataProvider, get_data_provider
+from schemas.order import CrateCounts, ProductOrder
 
 router = APIRouter(tags=["Orders"], prefix="/orders")
 

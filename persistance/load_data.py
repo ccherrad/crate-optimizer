@@ -1,8 +1,9 @@
 """Import Store data fron a json file
 """
-import structlog
-import os
 import json
+import os
+
+import structlog
 
 from exceptions.persistance import ProductNotFound
 
